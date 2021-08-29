@@ -9,4 +9,12 @@ test('constructor functions and this keyword', () => {
     console.log(user1);
     var user200 = new User('Jill', 'Robison', 25, 'female');
     console.log(user200);
+    User.prototype.emailDomain = '@facebook.com';
+    console.log(user200.emailDomain);
+    console.log(user1.emailDomain);
+    User.prototype.getEmailAddress = function() {
+        return this.firstName + this.lastName + this.emailDomain;
+    }
+    console.log(user200.getEmailAddress());
+    console.log(user1.getEmailAddress());
 });
