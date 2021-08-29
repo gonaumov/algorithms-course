@@ -1,0 +1,19 @@
+{
+  "name": "algorithms-course",
+  "version": "1.0.0",
+  "description": "I want just to use Jest as a helper via an algorithms course. So I am creating this tiny project. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "Jest",
+    "Algorithms"
+  ],
+  "author": "Georgi Naumov",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "jest": "^27.1.0"
+  }
+}
