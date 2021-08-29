@@ -17,4 +17,6 @@ test('constructor functions and this keyword', () => {
     }
     console.log(user200.getEmailAddress());
     console.log(user1.getEmailAddress());
+    expect(user1).toBeInstanceOf(User);
+    expect(user200).toBeInstanceOf(User);
 });
